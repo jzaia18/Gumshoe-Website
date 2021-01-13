@@ -1,0 +1,14 @@
+#Emacs temp files
+*~
+\#*\#
+auto-save-list
+.\#*
+
+# flymake-mode
+*_flymake.*
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
