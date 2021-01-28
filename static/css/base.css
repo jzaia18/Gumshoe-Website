@@ -1,3 +1,11 @@
 body {
-    background: lightgray; /* TODO: pick more pleasing color */
+    background-color: #fffaf0; /* TODO: pick more pleasing color */
+}
+
+nav {
+    background-color: #1f262a;
+}
+
+nav a {
+    color: darkgray;
 }
