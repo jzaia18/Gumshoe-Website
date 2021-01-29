@@ -1,3 +1,12 @@
 #linkedin-pic {
     max-width: 200px;
 }
+
+#intro-container {
+    padding: 1vw;
+    padding-top: 2vw;
+}
+
+#intro-container h1 {
+    text-align: center;
+}
