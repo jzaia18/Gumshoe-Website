@@ -1,0 +1,3 @@
+# Copy these files manually so they are not stored in git
+resume*.png
+resume.pdf
