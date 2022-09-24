@@ -1,5 +1,5 @@
 #linkedin-pic {
-    max-width: 100%;
+    max-width: min(100%, 500px);
 }
 
 #intro-container {
