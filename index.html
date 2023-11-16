@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="static/css/index.css">
 
     <link rel="shortcut icon" type="image/jpg" href="static/img/favicon.jpg"/>
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,30 +19,30 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">jzaia.net</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-buttons" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-buttons">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" href="static/resume/resume.pdf">Resume</a>
-          <a class="nav-item nav-link" href="https://github.com/jzaia18/Major-Projects">Portfolio</a>
-          <a class="nav-item nav-link" href="https://github.com/jzaia18/Gumshoe-Website">Source Code</a>
-        </div>
-      </div>
-    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+    <!--   <a class="navbar-brand" href="#">jzaia.net</a> -->
+    <!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-buttons" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> -->
+    <!--     <span class="navbar-toggler-icon"></span> -->
+    <!--   </button> -->
+    <!--   <div class="collapse navbar-collapse" id="navbar-buttons"> -->
+    <!--     <div class="navbar-nav"> -->
+    <!--       <a class="nav-item nav-link" href="#">Home</a> -->
+    <!--       <a class="nav-item nav-link" href="static/resume/resume.pdf">Resume</a> -->
+    <!--       <a class="nav-item nav-link" href="https://github.com/jzaia18/Major-Projects">Portfolio</a> -->
+    <!--       <a class="nav-item nav-link" href="https://github.com/jzaia18/Gumshoe-Website">Source Code</a> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </nav> -->
 
     <div id="intro-container">
       <h1>Welcome</h1>
       <p class="welcome-p">
-        Hello, I'm Jake Zaia, welcome to my personal website. Please see the above navbar for links to my <a href="static/resume/resume.pdf">resume</a>, <a href="https://github.com/jzaia18/Major-Projects">portfolio</a>, and the <a href="https://github.com/jzaia18/Gumshoe-Website">source code for this website</a> (licensed under GPLv2). If you're looking for more information about who I am and what I do, keep reading to the sections below. If you're looking to get in contact with me and you want to ask me some questions or schedule a time to chat, please email me at one of the email addresses listed below or connect with me on <a href="https://linkedin.com/in/jake-zaia">my LinkedIn</a>.
+        Hello, I'm Jake Zaia, welcome to my personal website. You can use the following links to find my <a href="static/resume/resume.pdf">resume</a>, <a href="https://github.com/jzaia18/Major-Projects">portfolio</a>, and the <a href="https://github.com/jzaia18/Gumshoe-Website">source code for this website</a> (licensed under GPLv2). If you're looking for more information about who I am and what I do, keep reading to the sections below. If you're looking to get in contact with me and you want to ask me some questions or schedule a time to chat, please email me at one of the <a href="#contact-section">email addresses listed below</a> or connect with me on <a href="https://linkedin.com/in/jake-zaia">my LinkedIn</a>.
       </p>
 
       <br />
 
-      <h1>About Me</h1>
+      <h1 id="about-section">About Me</h1>
       <div id="about-me-split" class="row">
 
         <div class="col-xl-2 col-lg-3 col-md-12" style="text-align: center">
@@ -50,34 +50,55 @@
         </div>
 
         <div class="col-xl-10 col-lg-9 col-md-12">
-          <h4>Education</h4>
+          <h4 id="education-section">Education</h4>
           <p class="about-p">
-            I'm currently a graduate student of computer science at Carnegie Mellon University working towards a masters degree in theoretical computer science. After I graduate, I plan to pursue a PhD with an emphasis on theoretical aspects of quantum computing. I graduated from the Rochester Institute of Technology (RIT) with a BS in computer science in 2023. While there, I specialized in computer science theory and cybersecurity, and completed a triple minor in mathematics, quantum technology, and computing security. Within the field of quantum computing, I have particular interests in computability, algorithm design, algorithm complexity, and cryptography.
+            I'm currently a graduate student at Carnegie Mellon University working towards a masters degree in theoretical computer science (MSCS) with a focus on quantum computing.
+            After I graduate, I plan to pursue a PhD with an emphasis on theoretical aspects of quantum computing, namely algorithm complexity, circuit optimization, and error correction.
+            Prior to coming to CMU, I graduated from the Rochester Institute of Technology (RIT) with a BS in computer science in 2023.
+            While there, I specialized in theoretical computer science and cybersecurity, and completed a triple minor in mathematics, quantum information science and technology, and computing security.
           </p>
 
-          <h4>Work</h4>
+          <h4 id="work-section">Work</h4>
           <p class="about-p">
-            During my college career I have worked a series of internships spanning a wide breadth of computer science topics. Most notably I have worked for <a href="https://mitre.org">MITRE</a> in both a development and research capacity. My research was involved in symbolic manipulation of qubit states, whereas my development roles were mostly associated with an internal resource management research project and the F-35 project. I have worked directly for the U. S. government as a data scientist, and possess a security clearance due to this work. I have also worked for <a href="https://www.herricktechlabs.com">HTL</a>, as an embedded software developer working on software defined radio systems, and for <a href="https://www.morganstanley.com">Morgan Stanley</a> as a web developer for an internal website. I'm always open to explore new opportunities to grow more as a developer. For a more detailed list of everything I've worked on, please see <a href="static/resume/resume.pdf">my resume</a>.
+            During my college career I have worked a series of internships spanning a wide breadth of computer science topics.
+            Most recently, I have worked at the <a href="https://www.sei.cmu.edu">Software Engineering Institute (SEI)</a> helping to conduct novel research in 2 separate roles.
+            My current role involves identifying and solving issues with creating fault-tolerant quantum systems, and a prior role involved analysis of data compression.
+            I have also worked for <a href="https://mitre.org">MITRE</a> in both a development and research capacity.
+            My research was involved in symbolic manipulation of qubit states, whereas my development roles were mostly associated with an internal resource management research project and the F-35 project.
+            Earlier in my career, I worked for <a href="https://www.herricktechlabs.com">HTL</a>, as an embedded software developer working on software defined radio systems, and for <a href="https://www.morganstanley.com">Morgan Stanley</a> as a web developer for an internal website.
+            I'm always open to explore new opportunities to grow more as a developer.
+            For a more detailed list of everything I've worked on, please see <a href="static/resume/resume.pdf">my resume</a>.
           </p>
 
-          <h4>FOSS Endeavors</h4>
-          <p class="about-p">
-            This website, in addition to being open source itself, is being hosted through <a href="https://mailinabox.email">Mail-in-a-box</a>, which is an open source implementation of a mail, file storage, and HTTP server. I am an active participant in and proponent of the free and open source community throughout the internet and at RIT, where I served as secretary and then as president of the <a href="https://ritlug.com">RIT Linux User's Group</a>. I love linux-y things, and encourage wider adoption of Linux for both technical and ethical reasons wherever I can. In addition, I am a <a href="https://github.com/RockstarLang/rockstar">Certified Rockstar Developer</a> and contributor to the Rockstar Language project and community.
-          </p>
-          <p class="about-p">
-              Moreover, I am a frequent attendee of hackathons, and have attended well over 20 across the state of New York and the surrounding area. My teams and I always enjoy working hard to produce something interesting, whether it be for the betterment of society or just to make something fun. For examples of some of these projects, please visit <a href="https://github.com/jzaia18/Major-Projects">my portfolio</a>, which lists many of my hackathon, personal, and school projects. I have also mentored hackathons on occasion and provided administrative and technical knowledge to participants and organizers.
-          </p>
-
-          <h4>Tutoring</h4>
-          <p class="about-p">
-            I am a lifelong teacher and tutor. I started my tutoring career as a volunteer in high school, and continued into the private sector in college via <a href="https://www.wyzant.com/Tutors/JakeZCSTutoring">Wyzant</a>. I love helping people learn and grow as I teach them computer science and mathematics in a way that's easy to understand. In total I have over 8 years of tutoring experience in both computer science and mathematics, at the middle school, high school, college, and adult level. This experience spans various programming languages and paradigms, and covers fields from computing fundamentals to object oriented languages to operating systems, pure theory, embedded development, algorithm optimization and computer graphics.
-          </p>
         </div>
       </div>
 
+      <h4 id="foss-section">FOSS Endeavors</h4>
+      <p class="about-p">
+        This website, in addition to being open source itself, is being hosted through <a href="https://mailinabox.email">Mail-in-a-box</a>, which is an open source implementation of a mail, file storage, and HTTP server.
+        I am an active participant in and proponent of the free and open source community throughout the internet, my community, and especially at RIT, where I served as secretary and then president of the <a href="https://ritlug.com">RIT Linux User's Group</a>.
+        I love linux-y things, and encourage wider adoption of Linux for both technical and ethical reasons wherever I can.
+        In addition, I am a <a href="https://github.com/RockstarLang/rockstar">Certified Rockstar Developer</a> and contributor to the Rockstar Language project and community.
+      </p>
+      <p class="about-p">
+        Moreover, I am a frequent attendee of hackathons, and have attended well over 20 across the state of New York and the surrounding area.
+        My teams and I always enjoy working hard to produce something interesting, whether it be for the betterment of society or just to make something fun.
+        For examples of some of these projects, please visit <a href="https://github.com/jzaia18/Major-Projects">my portfolio</a>, which lists many of my hackathon, personal, and school projects.
+        I have also mentored hackathons on occasion and provided administrative and technical knowledge to participants and organizers.
+      </p>
+
+      <h4 id="tutoring-section">Tutoring</h4>
+      <p class="about-p">
+        I am a lifelong teacher and tutor.
+        I started my tutoring career as a volunteer in high school, and continued into the private sector in college via <a href="https://www.wyzant.com/Tutors/JakeZCSTutoring">Wyzant</a>.
+        I love helping people learn and grow as I teach them computer science and mathematics in a way that's easy to understand.
+        In total I have almost 10 years of tutoring experience in both computer science and mathematics, at the middle school, high school, college, and adult level and over 1,250 hours of experience on Wyzant alone.
+        This experience spans various programming languages and paradigms, and covers fields from computing fundamentals to object oriented languages to operating systems, pure theory, embedded development, algorithm optimization and computer graphics.
+      </p>
+
       <br />
 
-      <h1>Contact</h1>
+      <h1 id="contact-section">Contact</h1>
       <p>
         Feel free to reach out to me at one of the following emails:
         <ul>
