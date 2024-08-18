@@ -1,5 +1,5 @@
 #linkedin-pic {
-    max-width: min(100%, 500px);
+    max-width: min(100%, 250px);
 }
 
 #intro-container {
@@ -12,4 +12,8 @@
 
 .about-p, .welcome-p {
     text-indent: 2em;
+}
+
+h3 {
+    font-size: 1.25rem;
 }
